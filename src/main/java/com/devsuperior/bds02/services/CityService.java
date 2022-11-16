@@ -1,4 +1,4 @@
-package com.devsuperior.bds02.dto.services;
+package com.devsuperior.bds02.services;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.bds02.dto.CityDTO;
-import com.devsuperior.bds02.dto.services.exceptions.DatabaseException;
-import com.devsuperior.bds02.dto.services.exceptions.ResourceNotFoundException;
 import com.devsuperior.bds02.entities.City;
 import com.devsuperior.bds02.repositories.CityRepository;
+import com.devsuperior.bds02.services.exceptions.DatabaseException;
+import com.devsuperior.bds02.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class CityService {
